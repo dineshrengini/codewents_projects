@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="memory.css">
+  <title>Memory Game</title>
+</head>
+
+<body>
+  <div class="scoreboard">
+    <span>Wins: <span id="winCount">0</span></span>
+    <span>Losses: <span id="lossCount">0</span></span>
+  </div>
+  <div class="memory-game">
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img class="front-face" src="./images/js-badge.svg" alt="Card 1">
+        </div>
+        <div class="card-back">
+          <img class="back-face" src="./images/aurelia.svg" alt="Card Back">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="memory.js"></script>
+</body>
+
+</html>
